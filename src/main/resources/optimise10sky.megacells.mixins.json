@@ -1,0 +1,7 @@
+{
+    "required": true,
+    "package": "com.optimise10sky.optimise10sky.mixins.megacells",
+    "mixins": [
+        "CompressionChainMixin"
+    ]
+}
