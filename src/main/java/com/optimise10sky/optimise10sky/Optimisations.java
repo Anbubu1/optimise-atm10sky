@@ -4,7 +4,7 @@ import net.neoforged.fml.common.Mod;
 
 @Mod(Optimisations.MOD_ID)
 public class Optimisations {
-    public static final String MOD_ID = "megacelloptimisations";
+    public static final String MOD_ID = "optimise10sky";
 
     public Optimisations() {
 

@@ -19,7 +19,18 @@ sourceSets.main.resources {
     exclude("src/generated/**/.cache")
 }
 
-repositories {}
+repositories {
+    mavenCentral()
+
+    maven {
+        name = "CurseMaven"
+        url = uri("https://cursemaven.com")
+    }
+}
+
+java {
+    withSourcesJar()
+}
 
 base {
     archivesName = mod_id
@@ -73,15 +84,6 @@ neoForge {
 
 configurations {
     runtimeClasspath.extendsFrom localRuntime
-}
-
-repositories {
-    mavenCentral()
-
-    maven {
-        name = "CurseMaven"
-        url = uri("https://cursemaven.com")
-    }
 }
 
 dependencies {
